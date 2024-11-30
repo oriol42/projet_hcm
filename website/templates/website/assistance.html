@@ -1,0 +1,102 @@
+    {% extends 'website/base.html' %}
+    {% load static %}
+    {% block content %}
+    <!-- page title start -->
+    <div class="breadcrumb-area bg-black bg-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8">
+                    <div class="breadcrumb-inner text-center">
+                        <h2 class="page-title">Assistance</h2>
+                        <ul class="page-list">
+                            <li><a href="{% url 'index' %}">Accueil</a></li>
+                            <li>Assistance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page title end -->
+    
+     <!-- why choose area start -->
+     <div class="why-choose pd-top-100 pd-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 order-lg-last">
+                    <div class="about-mask-bg-wrap about-mask-bg-wrap-2 mb-4 mb-lg-0">
+                        <img class="shape-image-sm top_image_bounce" src="{% static 'website/assets/img/about/2sm.webp' %}" alt="img">
+                        <img class="shape-image" src="{% static 'website/assets/img/about/2s.webp' %}" alt="img">
+                        <div class="thumb">
+                            <img src="{% static 'website/assets/img/about/2.webp' %}" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-first align-self-center">
+                    <div class="section-title px-lg-5 mb-0">
+                        <h5 class="sub-title right-line">Prise en main, conseil technique, support... l’assistance HCM MONETIC est à votre service pour vous accompagner au quotidien.</h5>
+                        <h2 class="title">UNE ASSISTANCE 100% AU SERVICE DES COIFFEURS.</h2>
+                        <p class="content">Notre service d'assistance vous accompagne pour la prise en main du logiciel de caisse HCM MONETIC. Quelle que soit la formule souscrite (formule par achat de licence ou formule par abonnement), vous disposez d'une assistance dédiée par téléphone et par mail pour vous accompagner dans le développement de votre salon de coiffure et l'utilisation du logiciel de coiffure.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- why choose area end -->
+
+    <!-- team area start -->
+    <div class="team-area info-box-two  pd-bottom-90">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-contact-inner text-center">
+                        <div class="icon-box">
+                            <i class="icomoon-pin"></i>
+                        </div>
+                        <div class="details-wrap">
+                            <div class="details-inner">
+                                <h3>Informations</h3>
+                                <p>
+                                    Pour tout renseignement ou information commerciale, contactez-nous du lundi au vendredi de 9h00 à 17h00,
+                                    par téléphone au 06 37 30 03 35 ou via le formulaire de contact</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-contact-inner text-center">
+                        <div class="icon-box">
+                            <i class=" icomoon-email"></i>
+                        </div>
+                        <div class="details-wrap">
+                            <div class="details-inner">
+                                <h3>Par mail</h3>
+                                <p>
+                                N'hésitez pas à nous envoyer un E-mail pour toute demande de renseignement. Indiquez nous un numéro de téléphone ou un email nous vous répondrons dans les plus brefs délais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-contact-inner text-center">
+                        <div class="icon-box">
+                            <i class=" icomoon-telephone"></i>
+                        </div>
+                        <div class="details-wrap">
+                            <div class="details-inner">
+                                <h3>Par téléphone</h3>
+                                <p> Du lundi au vendredi de 9h00 à 17h00
+                                    le Samedi sur rendez-vous
+                                    au numéro qui vous est communiqué à la souscription du forfait d'assistance.
+                                    <br>
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- team area end -->
+    {% endblock %}

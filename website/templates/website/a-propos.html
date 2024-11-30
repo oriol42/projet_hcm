@@ -1,0 +1,279 @@
+    {% extends 'website/base.html' %}
+    {% load static %}
+    {% block content %}
+    <!-- page title start -->
+    <div class="breadcrumb-area bg-black bg-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8">
+                    <div class="breadcrumb-inner text-center">
+                        <h2 class="page-title">A propos</h2>
+                        <ul class="page-list">
+                            <li><a href="{% url 'index' %}">Accueil</a></li>
+                            <li>A propos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page title end -->
+
+   <!-- about area start -->
+    <div class="about-area pd-top-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9">
+                    <div class="about-mask-bg-wrap about-mask-bg-wrap-1 mb-4 mb-lg-0">
+                        <img class="shape-image-sm top_image_bounce" src="{% static 'website/assets/img/about/1sm.webp' %}" alt="img">
+                        <img class="shape-image" src="{% static 'website/assets/img/about/1s.webp' %}" alt="img">
+                        <div class="thumb">
+                            <img src="{% static 'website/assets/img/about/1.webp' %}" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="section-title px-lg-5 mb-0">
+                        <h5 class="sub-title right-line">A propos</h5>
+                        <p class="content">HCM naît de la vision de Joachim Lopez Machado et de Elom
+                            Amenudzie, qui ont identifié un besoin croissant dans le secteur des coiffeurs à domicile et
+                            salons d’esthétique, salon de coiffure. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about area end -->
+
+    <!-- why choose area start -->
+    <div class="why-choose pd-top-100 pd-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9 order-lg-last">
+                    <div class="about-mask-bg-wrap about-mask-bg-wrap-2 mb-4 mb-lg-0">
+                        <img class="shape-image-sm top_image_bounce" src="{% static 'website/assets/img/about/2sm.webp' %}" alt="img">
+                        <img class="shape-image" src="{% static 'website/assets/img/about/2s.webp' %}" alt="img">
+                        <div class="thumb">
+                            <img src="{% static 'website/assets/img/about/2.webp' %}" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-first align-self-center">
+                    <div class="section-title px-lg-5 mb-0">
+                        <h5 class="sub-title right-line">Pourquoi nous choisir ?</h5>
+                        <p class="content">Maecenas tempus, tellus eget condime honcus semgs semper libero sit amet adipiscingem neque.</p>
+                        <div class="choose-wrap mt-4">
+                            <div class="media single-choose-inner">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="icomoon-gear"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4>Solutions flexibles</h4>
+                                    <p>Maecenas tempus, tellus eget condime honcus sem quam semper </p>
+                                </div>
+                            </div>
+                            <div class="media single-choose-inner">
+                                <div class="media-left">
+                                    <div class="icon">
+                                        <i class="icomoon-time"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h4>24/7 Support illimité</h4>
+                                    <p>Maecenas tempus, tellus eget condime honcus sem quam semper </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- why choose area end -->
+
+    <!-- faq area start -->
+    <div class="faq-area pd-bottom-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9 mb-4 mb-lg-0 order-lg-last">
+                    <div class="faq-image-wrap">
+                        <div class="thumb">
+                            <img src="{% static 'website/assets/img/about/f1.webp' %}" alt="img">
+                            <img class="img-position-1" src="{% static 'website/assets/img/about/f2.webp' %}" alt="img">
+                            <img class="img-position-2 top_image_bounce" src="{% static 'website/assets/img/about/f3.webp' %}" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-xl-5 order-lg-first align-self-center">
+                    <div class="section-title mb-0">
+                        <h5 class="sub-title left-border">Faq</h5>
+                        <p class="content">Lorem ipsum</p>
+                    </div>
+                    <div class="accordion mt-4" id="accordionExample">
+                        <div class="accordion-item single-accordion-inner">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Lorem ipsum
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Maecenas tempus, tellus eget condime honcus sem quam semper libero sit amet adipiscingem neque sed ipsum. amquam nunc
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item single-accordion-inner">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Lorem ipsum
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Maecenas tempus, tellus eget condime honcus sem quam semper libero sit amet adipiscingem neque sed ipsum. amquam nunc
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item single-accordion-inner">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Lorem ipsum
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Maecenas tempus, tellus eget condime honcus sem quam semper libero sit amet adipiscingem neque sed ipsum. amquam nunc
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- faq area end -->
+
+    <!-- testimonial area start -->
+    <div class="testimonial-area bg-sky pd-top-115 pd-bottom-90">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center">
+                        <h5 class="sub-title double-line">Client Feedback</h5>
+                        <h2 class="title">Que disent nos clients heureux</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slider-2 style-active-bg slider-control-round owl-carousel">
+                <div class="item">
+                    <div class="single-testimonial-inner style-4">
+                        <img class="shaddow-img" src="{% static 'website/assets/img/testimonial/02.webp' %}" alt="img">
+                        <div class="details">
+                            <p>Duis leo. Sed fringilla maurisamet nibh. odales sagittionsequat leo egetendum sodales augue nec atpellentesque semper</p>
+                            <h4>Karshin Kumar</h4>
+                            <span class="designation">Coiffeur</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-testimonial-inner style-4">
+                        <img class="shaddow-img" src="{% static 'website/assets/img/testimonial/02.webp' %}" alt="img">
+                        <div class="details">
+                            <p>Duis leo. Sed fringilla maurisamet nibh. odales sagittionsequat leo egetendum sodales augue nec atpellentesque semper</p>
+                            <h4>Necola Amar</h4>
+                            <span class="designation"Marquilleur</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-testimonial-inner style-4">
+                        <img class="shaddow-img" src="{% static 'website/assets/img/testimonial/02.webp' %}" alt="img">
+                        <div class="details">
+                            <p>Duis leo. Sed fringilla maurisamet nibh. odales sagittionsequat leo egetendum sodales augue nec atpellentesque semper</p>
+                            <h4>Forgan Arit</h4>
+                            <span class="designation">Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-testimonial-inner style-4">
+                        <img class="shaddow-img" src="{% static 'website/assets/img/testimonial/02.webp' %}" alt="img">
+                        <div class="details">
+                            <p>Duis leo. Sed fringilla maurisamet nibh. odales sagittionsequat leo egetendum sodales augue nec atpellentesque semper</p>
+                            <h4>Wilton Fork</h4>
+                            <span class="designation">Esthétitient</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- testimonial area end -->
+
+    <!-- blog area start -->
+    <div class="blog-area pd-top-115 pd-bottom-60">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-7 col-md-10">
+                    <div class="section-title text-center">
+                        <h5 class="sub-title double-line">Blog</h5>
+                        <h2 class="title">Lisez nos derniers blogs</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-inner style-3">
+                        <div class="thumb">
+                            <img src="{% static 'website/assets/img/blog/5.webp' %}" alt="img">
+                            <ul class="blog-meta">
+                                <li><i class="far fa-user"></i>Par l'admin</li>
+                                <li><i class="far fa-calendar-alt"></i> 25 Mai 2024</li>
+                            </ul>
+                        </div>
+                        <div class="details">
+                            <h4><a href="blog-details.html">HCM MONETIC</a></h4>
+                            <p>Duis leo. Sed fringilla mauris iamet nibh. odales sagittis magonsequat letendum sodales augue velit</p>
+                            <a class="read-more-btn" href="blog-details.html"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-inner style-3">
+                        <div class="thumb">
+                            <img src="{% static 'website/assets/img/blog/6.webp' %}" alt="img">
+                            <ul class="blog-meta">
+                                <li><i class="far fa-user"></i> Par l'admin</li>
+                                <li><i class="far fa-calendar-alt"></i> 25 Juin 2024</li>
+                            </ul>
+                        </div>
+                        <div class="details">
+                            <h4><a href="blog-details.html">HCM MONETIC</a></h4>
+                            <p>Duis leo. Sed fringilla mauris iamet nibh. odales sagittis magonsequat letendum sodales augue velit</p>
+                            <a class="read-more-btn" href="blog-details.html"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-inner style-3">
+                        <div class="thumb">
+                            <img src="{% static 'website/assets/img/blog/7.webp' %}" alt="img">
+                            <ul class="blog-meta">
+                                <li><i class="far fa-user"></i> Par l'admin</li>
+                                <li><i class="far fa-calendar-alt"></i> 25 Fevrier 2024</li>
+                            </ul>
+                        </div>
+                        <div class="details">
+                            <h4><a href="blog-details.html">HCM MONETIC</a></h4>
+                            <p>Duis leo. Sed fringilla mauris iamet nibh. odales sagittis magonsequat letendum sodales augue velit</p>
+                            <a class="read-more-btn" href="blog-details.html"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog area end -->
+    {% endblock %}

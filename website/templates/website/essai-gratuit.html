@@ -1,0 +1,73 @@
+    {% extends 'website/base.html' %}    
+    {% block content %}
+    <!-- page title start -->
+    <div class="breadcrumb-area bg-black bg-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8">
+                    <div class="breadcrumb-inner text-center">
+                        <h2 class="page-title">Essai gratuit</h2>
+                        <ul class="page-list">
+                            <li><a href="{% url 'index' %}">Accueil</a></li>
+                            <li>Essai gratuit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page title end -->
+
+    <div class="row justify-content-center pd-top-100">
+        <div class="col-xl-6 col-md-9">
+            <div class="section-title text-center">
+                <h2 class="title">Testez gratuitement l'application coiffure HCM MONETIC</h2>
+                <p class="content mt-2">La version d'évaluation est totalement gratuite et sans aucun engagementCaisse certifiée NF525 / Réservation en ligne / Agenda partagé / Gestion clients / SMS illimités et bien plus encore...</p>
+            </div>
+        </div>
+    </div>
+
+   <!-- faq area start -->
+    <div class="faq-area pd-bottom-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 pe-xl-5 align-self-center">
+                    <div class="section-title mb-0">
+                        <h5 class="sub-title left-border">Application Coiffure - Essai gratuit en ligne de l'application préférée des coiffeurs</h5>
+                        <p class="content">Essayez gratuitement et sans engagement le logiciel de caisse coiffure pour les salons de coiffure et les artisans coiffeurs HCM MONETIC.</p>
+                        <p class="content">Vous pouvez ainsi apprécier son efficacité et sa simplicité. </p>
+                        <p class="content">L’application web est compatible sur tous les appareils mobiles (smartphones Apple ou Android ) toutes les tablettes (Android, Ipad ,Windows) et tous les ordinateurs (Apple ou PC). L’option déconnectée permet même d’utiliser le logiciel lscoiffure sans aucune connexion internet.</p>
+                        <p class="content">Remplissez simplement le formulaire ci-contre pour bénéficier immédiatement d'un accès gratuit à l'application coiffure.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <form class="contact-form-wrap" action="mail.php" method="post" id="contact-form">
+                        <div class="consulting-contact-form mx-lg-4">
+                            <h3 class="mb-3">HCM MONETIC - Essai Gratuit de l'application des coiffeurs </h3>
+                            <div class="single-input-inner style-bg">
+                                <span class="essais">Nom de votre entreprise :</span>
+                                <br>
+                                <input name="name" type="text" placeholder="Entrez le nom commercial de votre entreprise">
+                            </div>
+                            <div class="single-input-inner style-bg">
+                                <span class="essais">Votre Email :</span>
+                                <br>
+                                <input name="email" type="email" placeholder="Entrez votre addresse mail">
+                            </div>
+                            <div class="single-input-inner style-bg">
+                                <span class="essais">Votre numéro de téléphone :</span>
+                                <br>
+                                <input name="name" type="number" placeholder="Ex: 06 xx xx xx 35">
+                            </div>
+                            <div class="btn-wrap pb-3">
+                                <button type="submit" class="btn btn-base">Commencez votre essai gratuit</button>
+                            </div>
+                        </div>
+                        <p class="form-messege mb-0 mt-20 text-center"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- faq area end -->
+    {% endblock %}
